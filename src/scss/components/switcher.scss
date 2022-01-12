@@ -1,0 +1,18 @@
+.switcher{
+    display: flex;
+    align-items: center;
+}
+.switcher__caption{
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 6px;
+    border-radius: 8px;
+    color: white;
+}
+.switcher__input{
+    -webkit-appearance: none;
+}
+.switcher__input:checked~.switcher__caption{
+    background-color: map-get($colors, accent);
+}

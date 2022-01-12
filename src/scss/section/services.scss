@@ -1,0 +1,110 @@
+.experience__content{
+    display: flex;
+    margin-bottom: 80px;
+}
+.experience__list{
+    width: 567px;
+    text-align: right;
+}
+.experience__item{
+    padding-bottom: 21px;
+    padding-right: 40px;
+    font-weight: bold;
+    @include hero;
+    color: map-get($colors, greytext);
+    border-right: 4px solid #E6E6F0;
+    cursor: pointer;
+    transition: all .5s;
+}
+.experience__item:hover{
+    color: transparent;
+    background-clip: text;
+    background-image: map-get($colors, redtext);
+    border-right:4px solid map-get($colors, border-red)
+}
+.experience__wrapper{
+    margin-left: 40px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.experience__title{
+    @include h2;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.experience__txt{
+    @include txt;
+    font-weight: 400;
+}
+.services{
+    padding-bottom: 20px;
+    position: relative;
+}
+.services__wrapper{
+    background-image: map-get($colors,supersoft); 
+    border-radius: 0px 0px 12px 12px;
+    padding: 80px 0px;
+}
+.services::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: calc(100% - 40px);
+    left: 20px;
+    height: 10px;
+    bottom: 10px;
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+}
+.services::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: calc(100% - 80px);
+    left: 40px;
+    height: 10px;
+    bottom: 0px;
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+}
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.services__link{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include h3-caps;
+    margin-bottom: 3px;
+    display: flex;
+    gap: 5.5px;
+    align-items: center;
+    color: white;
+    opacity: 0.5;
+    font-weight: 500;
+}
+.services-list__title{
+    margin-bottom: 68px;
+}
+.services-list__item{
+    width: 413px;
+}
+.services-list__img{
+    width: 92px;
+    border-radius: 24px;
+    background:white;
+    margin-bottom: 20px;
+}
+.services-list__caption{
+    @include h3;
+    color: map-get($colors, regular);
+    margin-bottom: 15px;
+}
+.services-list __txt{
+    @include list;
+    color: map-get($colors,redtext);
+}

@@ -1,3 +1,18 @@
-body {
-  background-color: red;
-}
+@import "variables";
+@import "mixins/fonts.scss";
+
+@import "components/switcher.scss";
+@import "components/header-contact.scss";
+@import "components/header-nav.scss";
+@import "components/title.scss";
+
+@import "reset";
+@import "index";
+
+@import "section/hero.scss";
+@import "section/services.scss";
+@import "section/team.scss";
+@import "section/cases.scss";
+@import "section/clients.scss";
+@import "section/publication.scss";
+@import "section/footer.scss";

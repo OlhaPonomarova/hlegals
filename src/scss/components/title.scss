@@ -1,0 +1,7 @@
+.title{
+    @include hero;
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    background-image: map-get($colors, redtext);
+}

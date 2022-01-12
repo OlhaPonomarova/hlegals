@@ -1,0 +1,56 @@
+.clients-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.clients-list__link{
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients__title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: map-get($colors, clients-title);
+    @include h4-clients;
+}
+.clients-list__link--hillel{
+    background: map-get($colors, hillel);
+}
+.clients-list__link--wannabiz{
+    background: map-get($colors, wannabiz);
+}
+.clients-list__link--tapgerine{
+    background: map-get($colors, tapgerine);
+}
+.clients-list__link--3dlook{
+    background: map-get($colors, 3dlook);
+}
+.clients-list__link--orangear{
+    background: map-get($colors, orangear);
+}
+.clients-list__link--adtelligent{
+    background: map-get($colors, adtelligent);
+}
+.clients-list__link--clikky{
+    background: map-get($colors, clickky);
+}
+.clients-list__link--ecoleasing{
+    background: map-get($colors, ecoleasing);
+}
+.clients-list__link--infratek{
+    background: map-get($colors, infratek);
+}
+.clients-list__link--citypark{
+    background: map-get($colors, citypark);
+}
+.clients-list__link--art-printstudio{
+    background: map-get($colors, art-printstudio);
+}
+.clients-list__link--ultimatecard{
+    background: map-get($colors, ultimatecard);
+}

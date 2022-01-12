@@ -1,0 +1,98 @@
+.publication{
+    padding-top: 40px;
+    background: map-get($colors, grey-bg);
+}
+.publication-container{
+   position: relative;
+   padding-bottom: 4px;
+}
+.publication-container::after{
+   content: '';
+   position: absolute;
+   display: block;
+   bottom: 0;
+   border: 4px solid map-get($colors, grey-separator);
+   width: 100%;
+}
+.publication__shade{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%); 
+}
+.publication__caption{
+    color: map-get($colors, link-bold);
+    font-weight: bold;
+    @include link-bold;
+    text-transform: uppercase;
+    display: flex;
+    gap: 8.5px;
+    align-items: center;
+}
+.publication__title{
+    margin-bottom: 40px;
+}
+.publication-list{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.publication-list__item{
+    width: 413px;
+    background: map-get($colors, white);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.publication-list__item-wrapper{
+    padding: 20px 20px 20px 21px;
+}
+.publication-list__img{
+    width: 100%;
+}
+.publication-list__link{
+    @include publik-link;
+    color: map-get($colors, link);
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.publication-list__link:hover{
+    color: map-get($colors, hover-link);
+}
+.publication-list__data{
+    @include data;
+    color: map-get($colors, data);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.publication-list__data:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: map-get($colors , publik-line);
+    margin-top:20px;
+}
+.publication__button{
+    color: map-get($colors , white);
+    font-weight: bold;
+    background-color: map-get($colors, button-reg);
+    padding: 16px 10px;
+    min-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    position: absolute;
+    left: 40%;
+    bottom: 20%;
+}
+.publication__button:hover{
+    background-color: map-get($colors, hover)
+}
+.publication-list__txt{
+    @include p-publik;
+    color: map-get($colors, p-publik);
+    letter-spacing: 1px;
+}
+

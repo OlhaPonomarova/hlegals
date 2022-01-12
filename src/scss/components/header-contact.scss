@@ -1,0 +1,12 @@
+.header-contacts{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    list-style: disc;
+    @include paragraph;
+}
+.header-contacts__item:first-child{
+    font-weight: 400;
+}

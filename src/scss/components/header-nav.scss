@@ -1,0 +1,7 @@
+.header-nav__list{
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-weight: 500;
+    @include h4;
+}

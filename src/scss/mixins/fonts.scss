@@ -1,0 +1,100 @@
+@font-face {
+    font-family: TTNorms;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url(../woff2/TTNorms-Light.woff2) format("woff2");
+}
+@font-face {
+    font-family: TTNorms;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url(../woff2/TTNorms-Regular.woff2) format("woff2");
+}
+@font-face {
+    font-family: TTNorms;
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url(../woff2/TTNorms-Bold.woff2) format("woff2");
+}
+@mixin h {
+    font-size: 3.8rem;
+    line-height:(45/38);
+    
+}
+@mixin h4 {
+    font-size: 1.8rem;
+    line-height: (21/18);
+    
+}
+@mixin paragraph{
+    font-size: 1.6rem;
+    line-height: (19/16);
+}
+@mixin h3-caps{
+    font-size: 1.4rem;
+    line-height: (17/14);
+}
+@mixin h3{
+    font-size: 2.4rem;
+    line-height: (28/24);
+}
+@mixin list{
+    font-size: 1.8rem;
+    line-height: (26/18);
+}
+@mixin hero{
+    font-size: 4.2rem;
+    line-height: (50/42);
+}
+@mixin h2{
+    font-size: 3.2rem;
+    line-height: (38/32);
+}
+@mixin txt {
+    font-size:2.1rem;
+    line-height: (30/21);
+}
+@mixin link-bold {
+    font-size: 1.4rem;
+    line-height: (17/14);
+}
+@mixin team-autor{
+    font-size: 1.8rem;
+    line-height: (21/18);
+}
+@mixin team-position{
+    font-size: 1.6rem;
+    line-height: (22/16);
+} 
+@mixin h3-cases {
+    font-size: 1.4rem;
+    line-height: (17/14);
+}
+@mixin cases-link {
+    font-size: 2.4rem;
+    line-height: (28/24);
+}
+@mixin cases-txt {
+    font-size: 1.8rem;
+    line-height: (26/18);
+}
+@mixin h4-clients {
+    font-size: 1.4rem;
+    line-height: (17/14);
+}
+@mixin publik-link {
+    font-size: 1.8rem;
+    line-height: (21/18);
+}
+@mixin data{
+    font-size: 1.2rem;
+    line-height: (14/12);
+}
+@mixin p-publik{
+    font-size: 1.6rem;
+    line-height: (22/16);
+} 
+    

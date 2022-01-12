@@ -1,0 +1,51 @@
+.footer-container{
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+.footer-list__txt{
+    @include paragraph;
+    color: map-get($colors, foottxt);
+    position: relative;
+}
+.footer-list__link{
+    @include data;
+    color: map-get($colors, link);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.footer-list__link:hover{
+    color: map-get($colors, hover-link)
+}
+.footer-list__tel{
+    @include paragraph;
+    color: map-get($colors, foottxt);
+    font-weight: bold;
+}
+.footer-list__link-contakt{
+    color: map-get($colors, link);
+    @include paragraph;
+    font-weight: bold;
+}
+.footer-list__link-contakt:hover{
+    color: map-get($colors, hover-link);
+}
+.footer__caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    @include paragraph;
+    color: map-get($colors, cases-txt);
+    font-weight: bold;
+}
